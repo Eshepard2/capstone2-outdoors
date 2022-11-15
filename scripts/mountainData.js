@@ -528,3 +528,12 @@ const mountainsArray = [
         }
     }
 ]
+
+const mountainsArrayList = document.getElementById('mountainsArrayList');
+
+let length = mountainsArray.length;
+for(let i =0; i < length; i++) {
+    let theOption = new Option(mountainsArray[i]);
+    document.getElementById('mountainsArrayList').appendChild(theOption);
+}
+console.log(mountainsArrayList);
