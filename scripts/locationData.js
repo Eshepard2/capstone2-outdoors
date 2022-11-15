@@ -64,4 +64,3 @@ for(let i =0; i < length; i++) {
     let theOption = new Option(locationsArray[i]);
     document.getElementById('locationsArrayList').appendChild(theOption);
 }
-console.log(locationsArrayList);
