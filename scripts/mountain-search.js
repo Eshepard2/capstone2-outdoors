@@ -11,9 +11,15 @@ for (let i = 0; i < mountainsArrayLength; i++) {
 let searchBtn = document.getElementById('searchBtn');
 // arrow function to search document by id and return 
 searchBtn.onclick = () => {
-    
+
 let mountainData = document.getElementById('mountainsArrayList').value;
+let filterdMountain = filterMountain(mountainData).Name;
+console.log(filterdMountain);
+};
 
+function filterMountain (array, selectedOption){
+    return array.filter((arrayItem)=>{
+     return selectedOption == arrayItem.Name.includes(selectedOption)
+    });
 }
-
 
