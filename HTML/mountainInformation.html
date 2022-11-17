@@ -17,22 +17,31 @@
         p{
             color: black;
         }
+        body{
+            background-image: url(/images/mountain-Backdrop.jpg);
+            background-repeat: no-repeat;
+            background-attachment: inherit;
+        }
     </style>
 </head>
 
 <body>
+
     <!-- create header -->
     <h1>
 Mountains
     </h1>
+    <button id="searchBtn"> Learn More</button>
+
     <!-- create drop down -->
 <select name="mountainsArray" id="mountainsArrayList">
     <option value="blank">Any Mountain Info</option>
 </select>
+
 <!-- create paragraph -->
 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora reiciendis dolorum unde neque eos, facere quos consequatur, ad animi explicabo corporis deleniti iste possimus modi eum repellat placeat exercitationem tenetur!</p>
 
   <!-- add link to source -->
-<script src="/scripts/searchEngine.js" type="module"></script>
+<script src="/scripts/mountain-search.js" type="module"></script>
 </body>
 </html>

@@ -10,6 +10,7 @@ import {nationalParksArray} from "./nationalParkData.js";
 // declared variables 
 let locationsArrayLength = locationsArray.length;
 let parkTypesArrayLength = parkTypesArray.length;
+
 const selectState = document.getElementById("locationsArrayList");
 const selectPark = document.getElementById("parkTypesArrayList");
 
@@ -29,6 +30,9 @@ for (let i = 0; i <parkTypesArrayLength; i++) {
     
 //     selectNationalPark.add(newOption,undefined);
 // }
+
+
+
 // declared new variable 
 let searchBtn = document.getElementById('searchBtn');
 // arrow function to search document by id and return 
@@ -36,10 +40,28 @@ searchBtn.onclick = () => {
 
 let locationData = document.getElementById('locationsArrayList').value;
 let parkData = document.getElementById('parkTypesArrayList').value;
+let filterdArray = filterLocation(nationalParksArray,locationData);
+let filterdPark = filterPark(nationalParksArray,parkData);
+console.log(filterdPark);
+console.log(filterdArray);
 };
 
-// filter 
+
+// filter location
+    function filterLocation(array,selectedOption) {
+        return array.filter((arrayItem)=>{
+          return selectedOption == arrayItem.State 
+        });
+    } 
 
 
+// filter park
+function filterPark (array,selectedOption) {
+    return array.filter((arrayItem)=>{
+        return  arrayItem.LocationName.includes(selectedOption)
+    });
+}
+
+// display 
 
 
