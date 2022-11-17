@@ -6,21 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+    div{
+        padding: 10px;
+    }
+</style>
 <body>
+<div id="changeLocation">
+    <!-- create button/give an id -->
+    <button id="searchBtn">Locate me</button>
     
-    <label for="locationsArray">National Parks</label>
     <!-- Make drop down menu -->
-    <select name="locationsArray" id="locationsArrayList">National Parks</select>
-    <!-- linked js pages to html -->
-    <script src="scripts/locationData.js"></script>
+<select name="locationsArray" id="locationsArrayList">
+        <option value="blank">Any locations</option>
+</select>
+   
+<select name="parkTypesArray" id="parkTypesArrayList">
+    <option value="blank">Any Park Types</option>
+</select>
+</div>
 
-<!--     
-    <label for="mountainInformation">Mountain Information</label>
-    <select name="mountainData" id="mountainsArrayList">Mountains</select>
-    <script src="scripts/mountainData.js"></script> -->
 
 
-    <label for="parkTypeData">Parks</label>
-    <select name="park" id="parkTypeArray">National Parks</select>
+<!-- linked js pages to html -->
+ <script src="/scripts/searchEngine.js" type="module"></script>
 </body>
 </html>

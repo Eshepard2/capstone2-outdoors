@@ -1,4 +1,4 @@
-const locationsArray = [
+export const locationsArray = [
     "Alabama",
     "Alaska",
     "American Samoa",
@@ -56,11 +56,74 @@ const locationsArray = [
     "Wyoming"
 ]
 
-// drop down menu
-const locationsArrayList = document.getElementById('locationsArrayList');
 
-let length = locationsArray.length;
-for(let i =0; i < length; i++) {
-    let theOption = new Option(locationsArray[i]);
-    document.getElementById('locationsArrayList').appendChild(theOption);
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// drop down menu
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// const locationsArrayList = document.getElementById('locationsArrayList');
+// let locationLength = locationsArray.length;
+
+// function changeLocation() {
+  
+//     document.getElementById("changeLocation").innerText.value= locationsArrayList;
+   
+// }
+// console.log(changeLocation);
+
+
+// for(let i =0; i < locationLength; i++) {
+//     let theOption = new Option(locationsArray[i]);
+ 
+
+//     console.log(locationsArray[i]);
+//     document.getElementById('locationsArrayList').appendChild(theOption);
+ 
+// }
