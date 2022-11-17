@@ -1,4 +1,4 @@
-const mountainsArray = [
+export const mountainsArray = [
     {
         name: "Mt. Washington",
         elevation: 6288,
@@ -533,13 +533,3 @@ const mountainsArray = [
 
 
 
-let length = mountainsArray.length;
-for(let i =0; i < length; i++) {
-    let theOption = new Option(mountainsArray[i], mountainsArray[i]);
-    document.getElementById('mountainsArray').appendChild(theOption);
-    document.querySelector('body').addEventListener('click',(e) => {
-        console.group(e);
-    })
-    
-}
-console.log(mountainsArray);
