@@ -8,20 +8,27 @@
     <!-- create style for document -->
     <style>
         h1{
-            border-width: 30px;
             font-family: 'Times New Roman', Times, serif;
-            font-display: initial;
-            color: brown;
-            padding: 10px;
+            font-style: italic;
+            margin-left: 50px;
         }
+
         p{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: large;
             color: black;
+           
+        }
+        img{
+        border-radius: 400%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
         }
         body{
-            background-image: url(/images/mountain-Backdrop.jpg);
-            background-repeat: no-repeat;
-            background-attachment: inherit;
+            background-color: blanchedalmond;
         }
+
     </style>
 </head>
 
@@ -34,13 +41,10 @@ Mountains
     <button id="searchBtn"> Learn More</button>
 
     <!-- create drop down -->
-<select name="mountainsArray" id="mountainsArrayList">
+<select name="mountainsArray" id="mountainsArray">
     <option value="blank">Any Mountain Info</option>
 </select>
-
-<!-- create paragraph -->
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora reiciendis dolorum unde neque eos, facere quos consequatur, ad animi explicabo corporis deleniti iste possimus modi eum repellat placeat exercitationem tenetur!</p>
-
+    <img src="/images/mountain-Backdrop.jpg" alt="Mountain">
   <!-- add link to source -->
 <script src="/scripts/mountain-search.js" type="module"></script>
 </body>

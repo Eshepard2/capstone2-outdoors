@@ -7,24 +7,63 @@
     <title>National Park Page</title>
 </head>
 <style>
-    div{
-        padding: 10px;
-    }
+
+   h1{
+    font-size: xx-large;
+    font-style: italic;
+    margin-left: 50px;
+   }
+   img{
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+   }
+   body{
+    background-color: blanchedalmond;
+   }
 </style>
 <body>
+
+    <h1>National Parks</h1>
+
+
+<img src="/images/nationalPark-backDrop.jpg" alt="national Park">
+
 <div id="changeLocation">
     <!-- create button/give an id -->
     <button id="searchBtn">Locate me</button>
     
     <!-- Make drop down menu -->
-<select name="locationsArray" id="locationsArrayList">
-        <option value="blank">Any locations</option>
-</select>
-   
-<select name="parkTypesArray" id="parkTypesArrayList">
-    <option value="blank">Any Park Types</option>
-</select>
+        <select name="locationsArray" id="locationsArrayList">
+            <option value="blank">Any locations</option>
+        </select>
+
+        <select name="parkTypesArray" id="parkTypesArrayList">
+            <option value="blank">Any Park Types</option>
+        </select>
+
 </div>
+<fieldset>
+     <table border="1">
+        <thead>
+        <th>name</th>
+        <th>adress</th>
+        <th>city</th>
+        <th>state</th>
+        <th>zipcode</th>
+        <th>phone</th>
+        <th>fax</th>
+        <th>latitude</th>
+        <th>longitude</th>
+        <th>type</th>
+        </thead>
+            <tbody id="tBody">
+
+            </tbody>
+    </table>
+</fieldset>
+
 
 
 

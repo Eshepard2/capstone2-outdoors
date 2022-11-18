@@ -25,17 +25,11 @@ for (let i = 0; i <parkTypesArrayLength; i++) {
     selectPark.add(newOption,undefined);
 }
 
-// for (let i = 0; i < nationalParksArrayLength; i++) {
-//     let newOption = new Option (nationalParksArray[i], nationalParksArray[i]);
-    
-//     selectNationalPark.add(newOption,undefined);
-// }
 
-
-
-// declared new variable 
+// declared new variable to equal document
 let searchBtn = document.getElementById('searchBtn');
-// arrow function to search document by id and return 
+
+// arrow function to search document by id 
 searchBtn.onclick = () => {
 
 let locationData = document.getElementById('locationsArrayList').value;
@@ -44,15 +38,18 @@ let filterdArray = filterLocation(nationalParksArray,locationData);
 let filterdPark = filterPark(nationalParksArray,parkData);
 console.log(filterdPark);
 console.log(filterdArray);
+// let tBody = document.getElementById('tBody');
 };
 
 
-// filter location
+// filter location and return 
     function filterLocation(array,selectedOption) {
         return array.filter((arrayItem)=>{
           return selectedOption == arrayItem.State 
         });
     } 
+
+
 
 
 // filter park
@@ -62,6 +59,27 @@ function filterPark (array,selectedOption) {
     });
 }
 
+
+
+
+
+
+
+
 // display 
+// if (
+//     selectState.includes(selectedOption) == true){
+    
+//     };
+   
 
 
+
+
+
+
+// for (let i = 0; i < nationalParksArrayLength; i++) {
+//     let newOption = new Option (nationalParksArray[i], nationalParksArray[i]);
+    
+//     selectNationalPark.add(newOption,undefined);
+// }
